@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Butter Help</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- ? TOP NAVBAR -->
     <nav class="top-nav" id="home">
       <div class="container">
@@ -52,9 +52,11 @@
     </nav>
 
     <!--? MAIN NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#home">Butter Help<span>.</span></a>
+        <a class="navbar-brand d-flex align-items-center" href="#home"
+          >Butter Help<span>.</span></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -96,6 +98,64 @@
     </nav>
     <!--MAIN NAVBAR -->
 
+    <!-- ? SLIDER -->
+    <div class="slider-wrapper owl-carousel owl-theme" id="hero-slider">
+      <!-- slide 1 -->
+      <div class="slide1 min-vh-100 bg-cover d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="float-sm-end">
+                <h6 class="text-uppercase text-white">
+                  We provide quality counseling
+                </h6>
+                <h1
+                  class="display-2 my-3 text-center text-white text-uppercase"
+                >
+                  Get Professional Help <br />
+                  anywhere you are
+                </h1>
+                <div class="float-sm-end">
+                  <a href="#" class="btn btn-brand">Get Started</a>
+                  <a href="#" class="btn btn-outline-light ms-md-3"
+                    >Our Services</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 2 -->
+      <div class="slide2 min-vh-100 bg-cover d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="float-sm-end">
+                <h6 class="text-uppercase text-white">
+                  Custom counseling for your needs
+                </h6>
+                <h1
+                  class="display-2 my-3 text-center text-white text-uppercase"
+                >
+                  Design your own <br />
+                  therapy session
+                </h1>
+                <div class="float-sm-end">
+                  <a href="#" class="btn btn-brand">Get Started</a>
+                  <a href="#" class="btn btn-outline-light ms-md-3"
+                    >Our Services</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide 2 -->
+    </div>
+    <!-- SLIDER -->
+
     <!-- Jquery -->
     <script src="./js/jquery.js"></script>
     <!-- Bootstrap js -->
@@ -106,6 +166,8 @@
     ></script>
     <!-- owl js -->
     <script src="./js/owl.carousel.min.js"></script>
+    <!-- my own js -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
 
