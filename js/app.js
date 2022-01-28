@@ -9,9 +9,23 @@ $(document).ready(function () {
     smartSpeed: 1000,
     navText: ["<", ">"],
     responsive: {
+      0: { nav: false },
+      768: { nav: true },
+    },
+  });
+
+  // PROJECT SLIDER
+  $("#project-slider").owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    smartSpeed: 1000,
+    margin: 24,
+    responsive: {
       0: {},
-      600: {},
-      1000: {},
+      768: {},
+      1140: { items: 2, center: true },
     },
   });
 });
