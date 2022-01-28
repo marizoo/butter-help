@@ -4,8 +4,10 @@
     --dark1: #1f1e1e;
     --dark2: #272727;
     --color1: #009999;
+    --color2: #015858;
     --white1: #fff;
-    --white2: rgb(230, 230, 230);
+    --white2: #e6e6e6;
+    --boxShadow1: 0 6px 30px rgba(0, 0, 0, 0.08);
 }
 
 body{
@@ -22,11 +24,31 @@ a{
     color: var(--dark2);
     text-decoration: none;
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 img{
     width: 100%;
 }
+
+/* BUTTONS ------------------------------------------- */
+.btn {
+    padding: 9px 24px;
+}
+
+.btn-brand {
+    background-color: var(--color1);
+    color: var(--white2);
+    border-color: var(--color1);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-brand:hover {
+    color: var(--white1);
+    background-color: var(--color2);
+}
+
 
 /* TOP NAV ------------------------------------------ */
 .top-nav {
@@ -63,4 +85,26 @@ img{
     .top-nav .social-links a:hover{
         color: var(--dark1);
         background-color: var(--white2);
+    }
+
+    /* NAV BAR ------------------------------------ */
+    .navbar{
+        box-shadow: var(--boxShadow1);
+
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 2rem;
+        color: var(--dark1);
+    }
+
+    .navbar-brand span{
+        color: var(--color1);
+        font-size: 3rem;
+    }
+
+    .navbar .navbar-nav .nav-link:hover,
+    .navbar .navbar-nav .nav-link:active {
+        color: var(--color1);
     }
