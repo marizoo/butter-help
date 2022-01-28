@@ -198,3 +198,17 @@ section{
         z-index: -1;
         margin-left: 30px;
     }
+
+    /* MILESTONES --------------------------------------------- */
+    #milestones {
+        background: linear-gradient(rgba(0, 153, 153, 0.671), rgba(0, 153, 153, 0.692)),url('https://images.pexels.com/photos/6457515/pexels-photo-6457515.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    }
+
+    #milestones .display-4,
+    #milestones p {
+        color: var(--white1);
+    }
+
+    #milestones .display-4 {
+        font-weight: 700;
+    }
