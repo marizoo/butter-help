@@ -150,9 +150,9 @@ section{
         height: 60px !important;
         display: grid;
         place-items: center;
-        background-color: rgba(255, 255, 255, 0.2) !important;
+        background-color: rgba(255, 255, 255, 0.521) !important;
         margin-top: -20px !important;
-        color: var(--white2) !important;
+        color: var(--color2) !important;
         font-weight: 700 !important;
         font-size: 1.5rem !important;
         border-radius: 100% !important;
@@ -172,7 +172,14 @@ section{
 
     .owl-prev:hover, .owl-next:hover{
         background-color: var(--color1) !important;
+        color: var(--white1) !important;
     }
+
+    #project-slider .owl-prev, 
+    #project-slider .owl-next{
+        font-size: 1.5rem !important;
+    }
+
 
     /* ABOUT --------------------------------------------------- */
     .info-box {
@@ -265,4 +272,20 @@ section{
         left: 0;
         padding: 32px;
         color: var(--white1);
+    }
+
+    .project h6 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .project h6::before {
+        content: '';
+        height: 4px;
+        width: 24px;
+        background-color: var(--color1);
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 12px;
     }
