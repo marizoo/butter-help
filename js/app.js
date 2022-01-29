@@ -29,15 +29,19 @@ $(document).ready(function () {
       1140: { items: 2, center: true },
     },
   });
+
+  //  REVIEW SLIDER
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: true,
+    items: 1,
+    smartSpeed: 900,
+  });
 });
 
 // to collapse navbar
-// $("#navbarSupportedContent").on("show.bs.collapse", function () {
-//   $("a.nav-link").click(function () {
-//     $("#navbarSupportedContent").collapse("hide");
-//   });
-// });
-
 $(".navbar-nav>li>a").on("click", function () {
   $(".navbar-collapse").collapse("hide");
 });
