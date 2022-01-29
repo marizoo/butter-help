@@ -289,3 +289,65 @@ section{
         vertical-align: middle;
         margin-right: 12px;
     }
+
+/* TEAM -------------------------------------------------------- */
+.team-member {
+    text-align: center;
+}
+
+.team-member .img-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member .overlay{
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 153, 153, 0.89);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member:hover .overlay{
+    opacity: 1;
+    top: 0;
+}
+
+.team-member .team-social-links{
+    z-index: 2;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+   transition: all 0.4s ease;
+}
+
+.team-member:hover .team-social-links{
+    opacity: 1;
+    top: 50%;
+}
+
+.team-member .team-social-links a{
+    width: 34px;
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white1);
+    font-size: 1.2rem;
+    border-radius: 100%;
+}
+
+.team-member .team-social-links a:hover{
+    color: var(--dark1);
+    background-color: var(--white2);
+}
+
+.team-member h5 {
+    margin-top: 24px;
+}
