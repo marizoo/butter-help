@@ -15,12 +15,10 @@ s
 - Mobile view: 95%. (Can't resolve some issues with Bootstrap5).
 
 ## See it on Youtube:
-[see this on youtube]
-(https://youtu.be/yEGIsgT1blM)
+<a href="https://youtu.be/yEGIsgT1blM" target="_blank">See this site on Youtube</a>
 
 ## see more projects on my Pinterest:
-[my projects on Pinterest]
-(https://pin.it/7qVM62Q)
+<a href="https://pin.it/7qVM62Q" target="_blank">More projects on my Pinterest</a>
 
 ## IMAGE:
 ![Screenshot of the site](./screenshots/bs-05-butterhelp-800.jpg)
